@@ -1,0 +1,479 @@
+Analysis & Synthesis report for Relogio
+Sun Jun 18 00:44:23 2023
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Jun 18 00:44:23 2023       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; Relogio                                     ;
+; Top-level Entity Name              ; Relogio                                     ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 163                                         ;
+;     Total combinational functions  ; 160                                         ;
+;     Dedicated logic registers      ; 85                                          ;
+; Total registers                    ; 85                                          ;
+; Total pins                         ; 21                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE6E22C8        ;                    ;
+; Top-level entity name                                            ; Relogio            ; Relogio            ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                   ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                         ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------+---------+
+; Relogio.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Rashira/Projetos/Amanda/Relogio/Relogio.bdf       ;         ;
+; decoder7seg.vhd                  ; yes             ; User VHDL File                     ; C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd   ;         ;
+; LogHora.vhd                      ; yes             ; User VHDL File                     ; C:/Rashira/Projetos/Amanda/Relogio/LogHora.vhd       ;         ;
+; cont5a0.vhd                      ; yes             ; User VHDL File                     ; C:/Rashira/Projetos/Amanda/Relogio/cont5a0.vhd       ;         ;
+; Cont9a0.vhd                      ; yes             ; User VHDL File                     ; C:/Rashira/Projetos/Amanda/Relogio/Cont9a0.vhd       ;         ;
+; Contador9a0.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Rashira/Projetos/Amanda/Relogio/Contador9a0.bdf   ;         ;
+; Contador5a0.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Rashira/Projetos/Amanda/Relogio/Contador5a0.bdf   ;         ;
+; ContadorHoras.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Rashira/Projetos/Amanda/Relogio/ContadorHoras.bdf ;         ;
+; DecoderLED.vhd                   ; yes             ; User VHDL File                     ; C:/Rashira/Projetos/Amanda/Relogio/DecoderLED.vhd    ;         ;
+; Timer.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Rashira/Projetos/Amanda/Relogio/Timer.bdf         ;         ;
+; Cont0a3.vhd                      ; yes             ; User VHDL File                     ; C:/Rashira/Projetos/Amanda/Relogio/Cont0a3.vhd       ;         ;
+; Hz240.vhd                        ; yes             ; User VHDL File                     ; C:/Rashira/Projetos/Amanda/Relogio/Hz240.vhd         ;         ;
+; Selector.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Rashira/Projetos/Amanda/Relogio/Selector.bdf      ;         ;
+; Hz1.vhd                          ; yes             ; User VHDL File                     ; C:/Rashira/Projetos/Amanda/Relogio/Hz1.vhd           ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 163         ;
+;                                             ;             ;
+; Total combinational functions               ; 160         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 45          ;
+;     -- 3 input functions                    ; 34          ;
+;     -- <=2 input functions                  ; 81          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 99          ;
+;     -- arithmetic mode                      ; 61          ;
+;                                             ;             ;
+; Total registers                             ; 85          ;
+;     -- Dedicated logic registers            ; 85          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 21          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; Clock~input ;
+; Maximum fan-out                             ; 65          ;
+; Total fan-out                               ; 669         ;
+; Average fan-out                             ; 2.33        ;
++---------------------------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                           ;
++--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                ; Entity Name   ; Library Name ;
++--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+---------------+--------------+
+; |Relogio                       ; 160 (3)             ; 85 (1)                    ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |Relogio                                           ; Relogio       ; work         ;
+;    |DecoderLED:inst3|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Relogio|DecoderLED:inst3                          ; DecoderLED    ; work         ;
+;    |Hz1:inst7|                 ; 54 (54)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Relogio|Hz1:inst7                                 ; Hz1           ; work         ;
+;    |Selector:inst6|            ; 55 (1)              ; 35 (2)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Relogio|Selector:inst6                            ; Selector      ; work         ;
+;       |Hz240:inst3333|         ; 54 (54)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Relogio|Selector:inst6|Hz240:inst3333             ; Hz240         ; work         ;
+;    |Timer:inst|                ; 29 (10)             ; 17 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Relogio|Timer:inst                                ; Timer         ; work         ;
+;       |Contador5a0:inst2|      ; 1 (1)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Relogio|Timer:inst|Contador5a0:inst2              ; Contador5a0   ; work         ;
+;       |Contador5a0:inst4|      ; 1 (1)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Relogio|Timer:inst|Contador5a0:inst4              ; Contador5a0   ; work         ;
+;       |Contador9a0:inst3|      ; 3 (1)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Relogio|Timer:inst|Contador9a0:inst3              ; Contador9a0   ; work         ;
+;          |Cont9a0:inst|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Relogio|Timer:inst|Contador9a0:inst3|Cont9a0:inst ; Cont9a0       ; work         ;
+;       |Contador9a0:inst5|      ; 3 (1)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Relogio|Timer:inst|Contador9a0:inst5              ; Contador9a0   ; work         ;
+;          |Cont9a0:inst|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Relogio|Timer:inst|Contador9a0:inst5|Cont9a0:inst ; Cont9a0       ; work         ;
+;       |ContadorHoras:inst3321| ; 11 (11)             ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Relogio|Timer:inst|ContadorHoras:inst3321         ; ContadorHoras ; work         ;
+;    |decoder7seg:inst2|         ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Relogio|decoder7seg:inst2                         ; decoder7seg   ; work         ;
++--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+---------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                            ;
++---------------------------------------+-------------------------------------------------------+
+; Register name                         ; Reason for Removal                                    ;
++---------------------------------------+-------------------------------------------------------+
+; Hz1:inst7|contador[0]                 ; Merged with Selector:inst6|Hz240:inst3333|contador[0] ;
+; Total Number of Removed Registers = 1 ;                                                       ;
++---------------------------------------+-------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 85    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 19    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Inverted Register Statistics                        ;
++-------------------------------------------+---------+
+; Inverted Register                         ; Fan out ;
++-------------------------------------------+---------+
+; Selector:inst6|Hz240:inst3333|contador[0] ; 4       ;
+; Total number of inverted registers = 1    ;         ;
++-------------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Relogio|decoder7seg:inst2|q0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 21                          ;
+; cycloneiii_ff         ; 85                          ;
+;     CLR               ; 11                          ;
+;     ENA CLR           ; 8                           ;
+;     plain             ; 66                          ;
+; cycloneiii_lcell_comb ; 172                         ;
+;     arith             ; 61                          ;
+;         2 data inputs ; 60                          ;
+;         3 data inputs ; 1                           ;
+;     normal            ; 111                         ;
+;         1 data inputs ; 21                          ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 33                          ;
+;         4 data inputs ; 45                          ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.30                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sun Jun 18 00:44:13 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Relogio -c Relogio
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file relogio.bdf
+    Info (12023): Found entity 1: Relogio
+Info (12021): Found 2 design units, including 1 entities, in source file decoder7seg.vhd
+    Info (12022): Found design unit 1: decoder7seg-archdecoder7seg File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 20
+    Info (12023): Found entity 1: decoder7seg File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file loghora.vhd
+    Info (12022): Found design unit 1: LogHora-archLogHora File: C:/Rashira/Projetos/Amanda/Relogio/LogHora.vhd Line: 15
+    Info (12023): Found entity 1: LogHora File: C:/Rashira/Projetos/Amanda/Relogio/LogHora.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file cont5a0.vhd
+    Info (12022): Found design unit 1: cont5a0-archcont5a0 File: C:/Rashira/Projetos/Amanda/Relogio/cont5a0.vhd Line: 15
+    Info (12023): Found entity 1: cont5a0 File: C:/Rashira/Projetos/Amanda/Relogio/cont5a0.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file cont9a0.vhd
+    Info (12022): Found design unit 1: Cont9a0-archCont9a0 File: C:/Rashira/Projetos/Amanda/Relogio/Cont9a0.vhd Line: 15
+    Info (12023): Found entity 1: Cont9a0 File: C:/Rashira/Projetos/Amanda/Relogio/Cont9a0.vhd Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file contador9a0.bdf
+    Info (12023): Found entity 1: Contador9a0
+Info (12021): Found 1 design units, including 1 entities, in source file contador5a0.bdf
+    Info (12023): Found entity 1: Contador5a0
+Info (12021): Found 1 design units, including 1 entities, in source file contadorhoras.bdf
+    Info (12023): Found entity 1: ContadorHoras
+Info (12021): Found 2 design units, including 1 entities, in source file decoderled.vhd
+    Info (12022): Found design unit 1: DecoderLED-archDecoderLED File: C:/Rashira/Projetos/Amanda/Relogio/DecoderLED.vhd Line: 15
+    Info (12023): Found entity 1: DecoderLED File: C:/Rashira/Projetos/Amanda/Relogio/DecoderLED.vhd Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file timer.bdf
+    Info (12023): Found entity 1: Timer
+Info (12021): Found 2 design units, including 1 entities, in source file cont0a3.vhd
+    Info (12022): Found design unit 1: Cont0a3-archCont0a3 File: C:/Rashira/Projetos/Amanda/Relogio/Cont0a3.vhd Line: 16
+    Info (12023): Found entity 1: Cont0a3 File: C:/Rashira/Projetos/Amanda/Relogio/Cont0a3.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file hz240.vhd
+    Info (12022): Found design unit 1: Hz240-LogHz240 File: C:/Rashira/Projetos/Amanda/Relogio/Hz240.vhd Line: 17
+    Info (12023): Found entity 1: Hz240 File: C:/Rashira/Projetos/Amanda/Relogio/Hz240.vhd Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file selector.bdf
+    Info (12023): Found entity 1: Selector
+Info (12021): Found 2 design units, including 1 entities, in source file hz1.vhd
+    Info (12022): Found design unit 1: Hz1-LogHz1 File: C:/Rashira/Projetos/Amanda/Relogio/Hz1.vhd Line: 17
+    Info (12023): Found entity 1: Hz1 File: C:/Rashira/Projetos/Amanda/Relogio/Hz1.vhd Line: 6
+Info (12127): Elaborating entity "Relogio" for the top level hierarchy
+Info (12128): Elaborating entity "DecoderLED" for hierarchy "DecoderLED:inst3"
+Info (12128): Elaborating entity "Timer" for hierarchy "Timer:inst"
+Info (12128): Elaborating entity "ContadorHoras" for hierarchy "Timer:inst|ContadorHoras:inst3321"
+Info (12128): Elaborating entity "LogHora" for hierarchy "Timer:inst|ContadorHoras:inst3321|LogHora:inst"
+Info (12128): Elaborating entity "Contador5a0" for hierarchy "Timer:inst|Contador5a0:inst2"
+Info (12128): Elaborating entity "cont5a0" for hierarchy "Timer:inst|Contador5a0:inst2|cont5a0:inst123"
+Info (12128): Elaborating entity "Contador9a0" for hierarchy "Timer:inst|Contador9a0:inst3"
+Info (12128): Elaborating entity "Cont9a0" for hierarchy "Timer:inst|Contador9a0:inst3|Cont9a0:inst"
+Info (12128): Elaborating entity "Hz1" for hierarchy "Hz1:inst7"
+Warning (10492): VHDL Process Statement warning at Hz1.vhd(42): signal "saida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/Hz1.vhd Line: 42
+Info (12128): Elaborating entity "decoder7seg" for hierarchy "decoder7seg:inst2"
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(33): signal "US3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(34): signal "US2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 34
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(35): signal "US1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 35
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(36): signal "US0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 36
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(37): signal "USPONTO" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 37
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(46): signal "DS3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 46
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(47): signal "DS2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 47
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(48): signal "DS1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(49): signal "DS0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 49
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(50): signal "DSPONTO" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 50
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(59): signal "UM3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 59
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(60): signal "UM2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 60
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(61): signal "UM1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 61
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(62): signal "UM0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 62
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(63): signal "UMPONTO" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 63
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(72): signal "DM3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 72
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(73): signal "DM2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 73
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(74): signal "DM1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 74
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(75): signal "DM0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 75
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(76): signal "DMPONTO" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 76
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(85): signal "q1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 85
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(85): signal "q0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 85
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(85): signal "q2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 85
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(85): signal "q3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 85
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(86): signal "q3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 86
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(86): signal "q2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 86
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(86): signal "q1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 86
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(86): signal "q0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 86
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(87): signal "q3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 87
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(87): signal "q2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 87
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(87): signal "q1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 87
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(87): signal "q0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 87
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(88): signal "q2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 88
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(88): signal "q1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 88
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(88): signal "q0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 88
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(88): signal "q3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 88
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(89): signal "q1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 89
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(89): signal "q0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 89
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(89): signal "q3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 89
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(89): signal "q2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 89
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(90): signal "q3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 90
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(90): signal "q1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 90
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(90): signal "q2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 90
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(90): signal "q0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 90
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(91): signal "q3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 91
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(91): signal "q2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 91
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(91): signal "q1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 91
+Warning (10492): VHDL Process Statement warning at decoder7seg.vhd(91): signal "q0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 91
+Warning (10631): VHDL Process Statement warning at decoder7seg.vhd(27): inferring latch(es) for signal or variable "q3", which holds its previous value in one or more paths through the process File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Warning (10631): VHDL Process Statement warning at decoder7seg.vhd(27): inferring latch(es) for signal or variable "q2", which holds its previous value in one or more paths through the process File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Warning (10631): VHDL Process Statement warning at decoder7seg.vhd(27): inferring latch(es) for signal or variable "q1", which holds its previous value in one or more paths through the process File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Warning (10631): VHDL Process Statement warning at decoder7seg.vhd(27): inferring latch(es) for signal or variable "q0", which holds its previous value in one or more paths through the process File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Warning (10631): VHDL Process Statement warning at decoder7seg.vhd(27): inferring latch(es) for signal or variable "Sponto", which holds its previous value in one or more paths through the process File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Warning (10631): VHDL Process Statement warning at decoder7seg.vhd(27): inferring latch(es) for signal or variable "DIS4", which holds its previous value in one or more paths through the process File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Warning (10631): VHDL Process Statement warning at decoder7seg.vhd(27): inferring latch(es) for signal or variable "DIS3", which holds its previous value in one or more paths through the process File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Warning (10631): VHDL Process Statement warning at decoder7seg.vhd(27): inferring latch(es) for signal or variable "DIS2", which holds its previous value in one or more paths through the process File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Warning (10631): VHDL Process Statement warning at decoder7seg.vhd(27): inferring latch(es) for signal or variable "DIS1", which holds its previous value in one or more paths through the process File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Info (10041): Inferred latch for "DIS1" at decoder7seg.vhd(27) File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Info (10041): Inferred latch for "DIS2" at decoder7seg.vhd(27) File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Info (10041): Inferred latch for "DIS3" at decoder7seg.vhd(27) File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Info (10041): Inferred latch for "DIS4" at decoder7seg.vhd(27) File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Info (10041): Inferred latch for "Sponto" at decoder7seg.vhd(27) File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Info (10041): Inferred latch for "q0" at decoder7seg.vhd(27) File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Info (10041): Inferred latch for "q1" at decoder7seg.vhd(27) File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Info (10041): Inferred latch for "q2" at decoder7seg.vhd(27) File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Info (10041): Inferred latch for "q3" at decoder7seg.vhd(27) File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 27
+Info (12128): Elaborating entity "Selector" for hierarchy "Selector:inst6"
+Info (12128): Elaborating entity "Hz240" for hierarchy "Selector:inst6|Hz240:inst3333"
+Warning (10492): VHDL Process Statement warning at Hz240.vhd(42): signal "saida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Rashira/Projetos/Amanda/Relogio/Hz240.vhd Line: 42
+Info (12128): Elaborating entity "Cont0a3" for hierarchy "Selector:inst6|Cont0a3:inst"
+Warning (14026): LATCH primitive "decoder7seg:inst2|q0" is permanently enabled File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 22
+Warning (14026): LATCH primitive "decoder7seg:inst2|q1" is permanently enabled File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 22
+Warning (14026): LATCH primitive "decoder7seg:inst2|q2" is permanently enabled File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 22
+Warning (14026): LATCH primitive "decoder7seg:inst2|q3" is permanently enabled File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 22
+Warning (14026): LATCH primitive "decoder7seg:inst2|Sponto" is permanently enabled File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 14
+Warning (14026): LATCH primitive "decoder7seg:inst2|q0" is permanently enabled File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 22
+Warning (14026): LATCH primitive "decoder7seg:inst2|q1" is permanently enabled File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 22
+Warning (14026): LATCH primitive "decoder7seg:inst2|q2" is permanently enabled File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 22
+Warning (14026): LATCH primitive "decoder7seg:inst2|q3" is permanently enabled File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 22
+Warning (14026): LATCH primitive "decoder7seg:inst2|Sponto" is permanently enabled File: C:/Rashira/Projetos/Amanda/Relogio/decoder7seg.vhd Line: 14
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "Timer:inst|ContadorHoras:inst3321|inst4" is converted into an equivalent circuit using register "Timer:inst|ContadorHoras:inst3321|inst4~_emulated" and latch "Timer:inst|ContadorHoras:inst3321|inst4~1"
+    Warning (13310): Register "Timer:inst|ContadorHoras:inst3321|inst3" is converted into an equivalent circuit using register "Timer:inst|ContadorHoras:inst3321|inst3~_emulated" and latch "Timer:inst|ContadorHoras:inst3321|inst3~1"
+    Warning (13310): Register "Timer:inst|ContadorHoras:inst3321|inst5" is converted into an equivalent circuit using register "Timer:inst|ContadorHoras:inst3321|inst5~_emulated" and latch "Timer:inst|ContadorHoras:inst3321|inst4~1"
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 188 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 167 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 74 warnings
+    Info: Peak virtual memory: 4862 megabytes
+    Info: Processing ended: Sun Jun 18 00:44:23 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:07
+
+

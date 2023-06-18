@@ -1,0 +1,13 @@
+library IEEE;
+use IEEE.std_logic_1164;
+
+entity cont5a0 is
+
+	port(
+	
+		Q2, Q1, Q0: in std_logic;
+		D2, D1, D0: out std_logic
+	
+	);
+	
+end cont5a0;

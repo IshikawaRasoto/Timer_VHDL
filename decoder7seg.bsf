@@ -1,0 +1,267 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 192 416)
+	(text "decoder7seg" (rect 5 0 55 12)(font "Arial" ))
+	(text "inst" (rect 8 384 20 396)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DM3" (rect 0 0 20 12)(font "Arial" ))
+		(text "DM3" (rect 21 27 41 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "DM2" (rect 0 0 20 12)(font "Arial" ))
+		(text "DM2" (rect 21 43 41 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "DM1" (rect 0 0 18 12)(font "Arial" ))
+		(text "DM1" (rect 21 59 39 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "DM0" (rect 0 0 20 12)(font "Arial" ))
+		(text "DM0" (rect 21 75 41 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "DMPONTO" (rect 0 0 48 12)(font "Arial" ))
+		(text "DMPONTO" (rect 21 91 69 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "UM3" (rect 0 0 20 12)(font "Arial" ))
+		(text "UM3" (rect 21 107 41 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "UM2" (rect 0 0 20 12)(font "Arial" ))
+		(text "UM2" (rect 21 123 41 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "UM1" (rect 0 0 18 12)(font "Arial" ))
+		(text "UM1" (rect 21 139 39 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "UM0" (rect 0 0 20 12)(font "Arial" ))
+		(text "UM0" (rect 21 155 41 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "UMPONTO" (rect 0 0 48 12)(font "Arial" ))
+		(text "UMPONTO" (rect 21 171 69 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "DS3" (rect 0 0 17 12)(font "Arial" ))
+		(text "DS3" (rect 21 187 38 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "DS2" (rect 0 0 17 12)(font "Arial" ))
+		(text "DS2" (rect 21 203 38 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 1))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "DS1" (rect 0 0 16 12)(font "Arial" ))
+		(text "DS1" (rect 21 219 37 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "DS0" (rect 0 0 17 12)(font "Arial" ))
+		(text "DS0" (rect 21 235 38 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 1))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "DSPONTO" (rect 0 0 46 12)(font "Arial" ))
+		(text "DSPONTO" (rect 21 251 67 263)(font "Arial" ))
+		(line (pt 0 256)(pt 16 256)(line_width 1))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "US3" (rect 0 0 17 12)(font "Arial" ))
+		(text "US3" (rect 21 267 38 279)(font "Arial" ))
+		(line (pt 0 272)(pt 16 272)(line_width 1))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "US2" (rect 0 0 17 12)(font "Arial" ))
+		(text "US2" (rect 21 283 38 295)(font "Arial" ))
+		(line (pt 0 288)(pt 16 288)(line_width 1))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "US1" (rect 0 0 16 12)(font "Arial" ))
+		(text "US1" (rect 21 299 37 311)(font "Arial" ))
+		(line (pt 0 304)(pt 16 304)(line_width 1))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "US0" (rect 0 0 17 12)(font "Arial" ))
+		(text "US0" (rect 21 315 38 327)(font "Arial" ))
+		(line (pt 0 320)(pt 16 320)(line_width 1))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "USPONTO" (rect 0 0 46 12)(font "Arial" ))
+		(text "USPONTO" (rect 21 331 67 343)(font "Arial" ))
+		(line (pt 0 336)(pt 16 336)(line_width 1))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "EN1" (rect 0 0 17 12)(font "Arial" ))
+		(text "EN1" (rect 21 347 38 359)(font "Arial" ))
+		(line (pt 0 352)(pt 16 352)(line_width 1))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "EN0" (rect 0 0 18 12)(font "Arial" ))
+		(text "EN0" (rect 21 363 39 375)(font "Arial" ))
+		(line (pt 0 368)(pt 16 368)(line_width 1))
+	)
+	(port
+		(pt 176 32)
+		(output)
+		(text "S6" (rect 0 0 10 12)(font "Arial" ))
+		(text "S6" (rect 145 27 155 39)(font "Arial" ))
+		(line (pt 176 32)(pt 160 32)(line_width 1))
+	)
+	(port
+		(pt 176 48)
+		(output)
+		(text "S5" (rect 0 0 10 12)(font "Arial" ))
+		(text "S5" (rect 145 43 155 55)(font "Arial" ))
+		(line (pt 176 48)(pt 160 48)(line_width 1))
+	)
+	(port
+		(pt 176 64)
+		(output)
+		(text "S4" (rect 0 0 11 12)(font "Arial" ))
+		(text "S4" (rect 144 59 155 71)(font "Arial" ))
+		(line (pt 176 64)(pt 160 64)(line_width 1))
+	)
+	(port
+		(pt 176 80)
+		(output)
+		(text "S3" (rect 0 0 10 12)(font "Arial" ))
+		(text "S3" (rect 145 75 155 87)(font "Arial" ))
+		(line (pt 176 80)(pt 160 80)(line_width 1))
+	)
+	(port
+		(pt 176 96)
+		(output)
+		(text "S2" (rect 0 0 10 12)(font "Arial" ))
+		(text "S2" (rect 145 91 155 103)(font "Arial" ))
+		(line (pt 176 96)(pt 160 96)(line_width 1))
+	)
+	(port
+		(pt 176 112)
+		(output)
+		(text "S1" (rect 0 0 9 12)(font "Arial" ))
+		(text "S1" (rect 146 107 155 119)(font "Arial" ))
+		(line (pt 176 112)(pt 160 112)(line_width 1))
+	)
+	(port
+		(pt 176 128)
+		(output)
+		(text "S0" (rect 0 0 10 12)(font "Arial" ))
+		(text "S0" (rect 145 123 155 135)(font "Arial" ))
+		(line (pt 176 128)(pt 160 128)(line_width 1))
+	)
+	(port
+		(pt 176 144)
+		(output)
+		(text "Sponto" (rect 0 0 27 12)(font "Arial" ))
+		(text "Sponto" (rect 128 139 155 151)(font "Arial" ))
+		(line (pt 176 144)(pt 160 144)(line_width 1))
+	)
+	(port
+		(pt 176 160)
+		(output)
+		(text "DIS4" (rect 0 0 21 12)(font "Arial" ))
+		(text "DIS4" (rect 134 155 155 167)(font "Arial" ))
+		(line (pt 176 160)(pt 160 160)(line_width 1))
+	)
+	(port
+		(pt 176 176)
+		(output)
+		(text "DIS3" (rect 0 0 20 12)(font "Arial" ))
+		(text "DIS3" (rect 135 171 155 183)(font "Arial" ))
+		(line (pt 176 176)(pt 160 176)(line_width 1))
+	)
+	(port
+		(pt 176 192)
+		(output)
+		(text "DIS2" (rect 0 0 20 12)(font "Arial" ))
+		(text "DIS2" (rect 135 187 155 199)(font "Arial" ))
+		(line (pt 176 192)(pt 160 192)(line_width 1))
+	)
+	(port
+		(pt 176 208)
+		(output)
+		(text "DIS1" (rect 0 0 18 12)(font "Arial" ))
+		(text "DIS1" (rect 137 203 155 215)(font "Arial" ))
+		(line (pt 176 208)(pt 160 208)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 160 384)(line_width 1))
+	)
+)

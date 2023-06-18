@@ -1,0 +1,257 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Clock'
+Slack : -4.900
+TNS   : -189.548
+
+Type  : Slow 1200mV 85C Model Setup 'Hz1:inst7|saida'
+Slack : -2.160
+TNS   : -4.184
+
+Type  : Slow 1200mV 85C Model Setup 'Timer:inst|Contador9a0:inst5|inst2'
+Slack : -2.015
+TNS   : -2.663
+
+Type  : Slow 1200mV 85C Model Setup 'Timer:inst|Contador5a0:inst4|inst3'
+Slack : -1.886
+TNS   : -4.592
+
+Type  : Slow 1200mV 85C Model Setup 'Timer:inst|Contador9a0:inst3|inst2'
+Slack : -1.536
+TNS   : -3.295
+
+Type  : Slow 1200mV 85C Model Setup 'Timer:inst|Contador5a0:inst2|inst3'
+Slack : -0.791
+TNS   : -3.037
+
+Type  : Slow 1200mV 85C Model Setup 'Selector:inst6|Hz240:inst3333|saida'
+Slack : -0.027
+TNS   : -0.027
+
+Type  : Slow 1200mV 85C Model Hold 'Timer:inst|Contador9a0:inst5|inst2'
+Slack : -0.906
+TNS   : -0.906
+
+Type  : Slow 1200mV 85C Model Hold 'Timer:inst|Contador5a0:inst2|inst3'
+Slack : -0.191
+TNS   : -0.191
+
+Type  : Slow 1200mV 85C Model Hold 'Timer:inst|Contador5a0:inst4|inst3'
+Slack : -0.034
+TNS   : -0.034
+
+Type  : Slow 1200mV 85C Model Hold 'Timer:inst|Contador9a0:inst3|inst2'
+Slack : 0.460
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Hz1:inst7|saida'
+Slack : 0.485
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Selector:inst6|Hz240:inst3333|saida'
+Slack : 0.525
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Clock'
+Slack : 0.760
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -99.655
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Timer:inst|Contador5a0:inst4|inst3'
+Slack : -1.487
+TNS   : -7.435
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Hz1:inst7|saida'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Timer:inst|Contador5a0:inst2|inst3'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Timer:inst|Contador9a0:inst3|inst2'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Timer:inst|Contador9a0:inst5|inst2'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Selector:inst6|Hz240:inst3333|saida'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Slow 1200mV 0C Model Setup 'Clock'
+Slack : -4.580
+TNS   : -166.224
+
+Type  : Slow 1200mV 0C Model Setup 'Hz1:inst7|saida'
+Slack : -1.972
+TNS   : -3.682
+
+Type  : Slow 1200mV 0C Model Setup 'Timer:inst|Contador9a0:inst5|inst2'
+Slack : -1.853
+TNS   : -2.301
+
+Type  : Slow 1200mV 0C Model Setup 'Timer:inst|Contador5a0:inst4|inst3'
+Slack : -1.689
+TNS   : -3.921
+
+Type  : Slow 1200mV 0C Model Setup 'Timer:inst|Contador9a0:inst3|inst2'
+Slack : -1.396
+TNS   : -2.811
+
+Type  : Slow 1200mV 0C Model Setup 'Timer:inst|Contador5a0:inst2|inst3'
+Slack : -0.646
+TNS   : -2.446
+
+Type  : Slow 1200mV 0C Model Setup 'Selector:inst6|Hz240:inst3333|saida'
+Slack : 0.070
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Timer:inst|Contador9a0:inst5|inst2'
+Slack : -0.870
+TNS   : -0.870
+
+Type  : Slow 1200mV 0C Model Hold 'Timer:inst|Contador5a0:inst2|inst3'
+Slack : -0.210
+TNS   : -0.210
+
+Type  : Slow 1200mV 0C Model Hold 'Timer:inst|Contador5a0:inst4|inst3'
+Slack : -0.068
+TNS   : -0.068
+
+Type  : Slow 1200mV 0C Model Hold 'Timer:inst|Contador9a0:inst3|inst2'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Hz1:inst7|saida'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Selector:inst6|Hz240:inst3333|saida'
+Slack : 0.492
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Clock'
+Slack : 0.704
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -99.655
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Timer:inst|Contador5a0:inst4|inst3'
+Slack : -1.487
+TNS   : -7.494
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Timer:inst|Contador9a0:inst5|inst2'
+Slack : -1.487
+TNS   : -6.048
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Timer:inst|Contador9a0:inst3|inst2'
+Slack : -1.487
+TNS   : -5.986
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Timer:inst|Contador5a0:inst2|inst3'
+Slack : -1.487
+TNS   : -5.964
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Hz1:inst7|saida'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Selector:inst6|Hz240:inst3333|saida'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Fast 1200mV 0C Model Setup 'Clock'
+Slack : -1.597
+TNS   : -50.241
+
+Type  : Fast 1200mV 0C Model Setup 'Hz1:inst7|saida'
+Slack : -0.341
+TNS   : -0.804
+
+Type  : Fast 1200mV 0C Model Setup 'Timer:inst|Contador9a0:inst5|inst2'
+Slack : -0.281
+TNS   : -0.460
+
+Type  : Fast 1200mV 0C Model Setup 'Timer:inst|Contador5a0:inst4|inst3'
+Slack : -0.189
+TNS   : -0.249
+
+Type  : Fast 1200mV 0C Model Setup 'Timer:inst|Contador9a0:inst3|inst2'
+Slack : -0.033
+TNS   : -0.062
+
+Type  : Fast 1200mV 0C Model Setup 'Timer:inst|Contador5a0:inst2|inst3'
+Slack : 0.225
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Selector:inst6|Hz240:inst3333|saida'
+Slack : 0.558
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Timer:inst|Contador9a0:inst5|inst2'
+Slack : -0.380
+TNS   : -0.380
+
+Type  : Fast 1200mV 0C Model Hold 'Timer:inst|Contador5a0:inst2|inst3'
+Slack : -0.054
+TNS   : -0.054
+
+Type  : Fast 1200mV 0C Model Hold 'Timer:inst|Contador5a0:inst4|inst3'
+Slack : 0.010
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Hz1:inst7|saida'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Selector:inst6|Hz240:inst3333|saida'
+Slack : 0.204
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Timer:inst|Contador9a0:inst3|inst2'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Clock'
+Slack : 0.301
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -72.192
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Timer:inst|Contador5a0:inst4|inst3'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Hz1:inst7|saida'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Timer:inst|Contador5a0:inst2|inst3'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Timer:inst|Contador9a0:inst3|inst2'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Timer:inst|Contador9a0:inst5|inst2'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Selector:inst6|Hz240:inst3333|saida'
+Slack : -1.000
+TNS   : -2.000
+
+------------------------------------------------------------

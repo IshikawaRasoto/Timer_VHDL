@@ -1,0 +1,23 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity LogHora is
+
+	port(
+		
+		Q2, Q1, Q0: in std_logic;
+		D2, D1, D0: out std_logic
+		
+	);
+	
+end LogHora;
+
+architecture archLogHora of LogHora is
+
+	begin
+	
+	D2 <= not q2 and not q1 and not q0;
+	D1 <= q2 or (q1 and q0);
+	D0 <= q2 or (q1 and not q0);
+	
+end archLogHora;
